@@ -19,7 +19,7 @@ jobs:
       with:
        username: ${{secrets.DOCKERHUBUSERNAME}}
        password: ${{secrets.DOCKERHUBPASSWORD}}
-    - name: Docker Pull task
+    - name: Docker Pull
       run: docker pull demo
     - name: Docker_Tag
       run: docker tag  sdut007/sudeep-git-repo:V2
