@@ -22,9 +22,9 @@ jobs:
     - name: Docker Pull task
       run: docker pull demo
     - name: Docker_Tag
-      run: docker tag demo sdut007/sudeep-git-repo
+      run: docker tag  sdut007/sudeep-git-repo:V2
     - name: Docker Push  task
-      run: docker push sdut007/sudeep-git-repo
+      run: docker push sdut007/sudeep-git-repo:V2
   Logintodockerhub2:
     runs-on: ubuntu-latest
     environment: QA
