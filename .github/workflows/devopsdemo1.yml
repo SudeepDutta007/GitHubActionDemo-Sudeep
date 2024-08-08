@@ -23,9 +23,9 @@ jobs:
     - name: Docker Pull
       run: docker pull hello-world
     - name: Docker Tag
-      run: docker tag hello-world sdut007/sudeep-git-repo
+      run: docker tag hello-world sdut007/sudeep-git-repo:v1
     - name: Docker Push
-      run: docker push sdut007/sudeep-git-repo
+      run: docker push sdut007/sudeep-git-repo:v1
   LogintodockerhubQA:
     runs-on: ubuntu-latest
     environment: QA
